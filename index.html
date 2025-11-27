@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монгол Орны Аялал</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Монгол Орны Аялал</h1>
+        <p>Аяллын маршрут, зардлын тооцоолууртай</p>
+    </header>
+
+    <section id="travel-list" class="container"></section>
+
+    <section id="calculator" class="calc-box">
+        <h2>Аяллын Зардлын Тооцоолуур</h2>
+        <label>Ханш (1 USD = ...₮):</label>
+        <input id="rate" type="number" value="3450">
+
+        <label>Тээврийн 1 км үнэ (₮):</label>
+        <input id="perkm" type="number" value="350">
+
+        <label>Хоногийн хоол + байр (₮):</label>
+        <input id="daily" type="number" value="65000">
+
+        <button onclick="calculate()">Тооцоо Гаргах</button>
+
+        <div id="result"></div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
